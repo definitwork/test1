@@ -3,4 +3,5 @@ from .models import *
 
 
 def get_products(request):
-    return render(request, template_name='products.html', context={'products': Product.objects.all()})
+    products = Product.objects.all()[:8]
+    return render(request, template_name='products.html', context={'products': products})
