@@ -3,6 +3,6 @@ from .models import *
 
 
 def get_products(request):
-    # Я Галя и я хочу 7 продуктов
-    products = Product.objects.all()[:7]
+    # Не трогать, все ок
+    products = Product.objects.all()
     return render(request, template_name='products.html', context={'products': products})
