@@ -20,6 +20,9 @@
                                 <div class="product_item">
                                     <p>{{ product.name }}</p>
                                     <p>{{ product.price }}</p>
+                                    {% if product.sale %}
+                                        <p id="sale">SALE</p>
+                                    {% endif %}
                                 </div>
 
                             {% endfor %}
