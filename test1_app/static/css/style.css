@@ -19,7 +19,7 @@
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 50.4px */
+    line-height: 120%;
 }
 
 .products_list {
@@ -32,6 +32,7 @@
 
 .product_item {
     display: flex;
+    position: relative;
     background-color: bisque;
     border-radius: 15px;
     flex-direction: column;
@@ -46,9 +47,14 @@
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
-        line-height: 120%; /* 50.4px */
+        line-height: 120%;
     }
 
 }
-
+#sale {
+    position: absolute;
+    top: 310px;
+    left: 255px;
+    color: crimson;
+}
 
