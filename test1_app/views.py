@@ -3,5 +3,6 @@ from .models import *
 
 
 def get_products(request):
-    products = Product.objects.all()
+    # Я Галя и я хочу 7 продуктов
+    products = Product.objects.all()[:7]
     return render(request, template_name='products.html', context={'products': products})
