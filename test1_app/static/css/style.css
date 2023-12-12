@@ -33,7 +33,7 @@
 .product_item {
     display: flex;
     position: relative;
-    background-color: bisque;
+    background-color: #398c8c;
     border-radius: 15px;
     flex-direction: column;
     width: 366px;
