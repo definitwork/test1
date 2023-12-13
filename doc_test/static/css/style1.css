@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'alexbrush';
+    src: url("../fonts/alex brush/AlexBrush-Regular.ttf") format("truetype");
+}
+
+
+.feedback_item_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.any_info_footer_container {
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    align-items: center;
+}
+
+.legal_info_description_container{
+    text-align: center;
+}
+.any_info_footer_logo {
+    font-family: alexbrush;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact_icon_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item_pay_container_top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item_pay_container_bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.contact_icon {
+    width: 25px;
+    height: 25px;
+}
+
+.feedback_inputs {
+    width: 255px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #d5d5bd;
+    border: none;
+}
