@@ -1,43 +1,34 @@
+@font-face {
+    font-family: 'alexbrush';
+    src: url("../fonts/alex brush/AlexBrush-Regular.ttf") format("truetype");
+}
+
+
 .feedback_item_container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     border: 1px solid black;
-
+    height: 90px;
 }
 
-.name_element {
+.any_info_footer_container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    height: 150px;
+    align-items: center;
+}
+
+.any_info_footer_logo{
+    font-family: alexbrush;
+    font-size: 40px;
+    font-weight: bold;
+}
+.feedback_inputs {
     width: 255px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid black;
     background-color: rgba(128, 111, 111, 0.11);
-
-
-}
-
-.phone_element {
-    width: 255px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: rgba(128, 111, 111, 0.11);
-}
-
-.email_element {
-    width: 255px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: rgba(128, 111, 111, 0.11);
-}
-
-.button_element {
-    width: 255px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: rgba(128, 111, 111, 0.11);
-
 }
