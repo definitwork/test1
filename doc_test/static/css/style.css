@@ -1,0 +1,43 @@
+.feedback_item_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 1px solid black;
+
+}
+
+.name_element {
+    width: 255px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(128, 111, 111, 0.11);
+
+
+}
+
+.phone_element {
+    width: 255px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(128, 111, 111, 0.11);
+}
+
+.email_element {
+    width: 255px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(128, 111, 111, 0.11);
+}
+
+.button_element {
+    width: 255px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(128, 111, 111, 0.11);
+
+}
