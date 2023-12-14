@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestPage</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+<main>
+p
+    <section class="welcom_video">
+        <div class="welcom_video_container">
+            <div class="wrapper_welcom_video_and_title_and_summary_button">
+                <div class="title_and_summary_button">
+                    <div class="title_and_summary">
+                        <h1>Documentation</h1>
+                        <p>Здесь будет дублироваться краткая информация из видео справо. Видео подтягиваться из YouTube. Видео выбирает заказчик.</p>
+                    </div>
+                    <button class="learn_about_yourself">Узнать о себе</button>
+                </div>
+                <div class="welcome_video">
+                    <iframe width="640" height="492" src="https://www.youtube.com/embed/XVkADAwOXnU?si=kkndRMbMKu61HxAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+     <div class="main_description_container">
+         <div class="main_description_title">
+             <div>Lorem ipsum</div>
+        </div>
+        <div class="main_description_content_container">
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+        </div>
+         <div class="main_description_content_container">
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+        </div>
+         <div class="main_description_content_container">
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="diagram">
+        <div class="diagram_container">
+            <div class="diagram_wrapper">
+                <div class="first_diagram">
+                    <h2 class="first_diagram_title">
+                        Lorem ipsum
+                    </h2>
+                    <div class="first_diagram_img">
+                        <img src="../static/img/diagram/chart.png" alt="../static/img/diagram/chart.png">
+                    </div>
+                    <p class="first_diagram_text">
+                        Lorem ipsum
+                    </p>
+                </div>
+                <div class="second_diagram">
+                    <div class="second_diagram_img">
+                        <img src="../static/img/diagram/chart.png" alt="../static/img/diagram/chart.png">
+                    </div>
+                    <p class="first_diagram_text">
+                        Lorem ipsum
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <form id="feedback_form" action="" method="POST">
+        {% csrf_token %}
+
+    </form>
+    <div class="feedback_item_container">
+        <div class="name_element">
+            <input class="feedback_inputs" type="text" id="name" name="name" placeholder="Ваше имя"
+                   form="feedback_form">
+        </div>
+        <div class="phone_element">
+            <input class="feedback_inputs" type="text" id="phone" name="phone" placeholder="+375(_)___-__-__"
+                   form="feedback_form">
+        </div>
+        <div class="email_element">
+            <input class="feedback_inputs" type="email" id="email" name="email" placeholder="e-mail"
+                   form="feedback_form">
+
+        </div>
+        <div class="button_element">
+            <input class="feedback_inputs" type="submit" value="Отправить"
+                   form="feedback_form">
+        </div>
+    </div>
+    <div class="any_info_footer_container">
+        <div class="any_info_footer_logo">
+            <p>HumanDoc</p>
+        </div>
+        <div class="any_info_footer_text">
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="any_info_footer_text2">
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="any_info_footer_contact_container">
+            <div class="contact_description">
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="contact_phone">
+                <p>+37525-658-14-73</p>
+            </div>
+            <div class="contact_email">
+                <p>email yodaborodach@johan.pull</p>
+            </div>
+            <div class="contact_icon_container">
+                <div class="icon_instagram">
+                    <img class="contact_icon" src="../static/icon/Instagram svg.svg" alt="">
+                </div>
+                <div class="icon_vk">
+                    <img class="contact_icon" src="../static/icon/VK - png.svg" alt="">
+                </div>
+                <div class="icon_facebook">
+                    <img class="contact_icon" src="../static/icon/Facebook svg.svg" alt="">
+                </div>
+                <div class="icon_youtube">
+                    <img class="contact_icon" src="../static/icon/YouTube svg.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="any_info_footer_pay_container">
+            <div class="pay_description">
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="pay_icon_container">
+                <div class="item_pay_container_top">
+                    <div class="pay_icon_visa">
+                        <img src="../static/icon/pay_system/visa.svg" alt="">
+                    </div>
+                    <div class="pay_icon_visa_maestro">
+                        <img src="../static/icon/pay_system/visaver.svg" alt="">
+                    </div>
+                    <div class="pay_icon_mastercard">
+                        <img src="../static/icon/pay_system/master.svg" alt="">
+                    </div>
+                </div>
+                <div class="item_pay_container_bottom">
+                    <div class="pay_icon_visa_mastercard_sc">
+                        <img src="../static/icon/pay_system/master2.svg" alt="">
+                    </div>
+                    <div class="pay_icon_visa_belcard">
+                        <img src="../static/icon/pay_system/belcard.svg" alt="">
+                    </div>
+                    <div class="pay_icon_visa_bepaid">
+                        <img src="../static/icon/pay_system/bipay.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="legal_info">
+        <div class="legal_info_description_container">
+            <div class="legal_info_description">
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="legal_info_description_info1">
+                <p>ООО “Lorem ipsum”, УПН 111111111</p>
+            </div>
+            <div class="legal_info_description_info2">
+                <p>Юр. адрес: 222222, Lorem ipsum</p>
+            </div>
+            <div class="legal_info_description_info3">
+                <p>t is a long established fact that a reader will be distracted by the readable </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
