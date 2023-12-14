@@ -8,6 +8,67 @@
 </head>
 <body>
 <main>
+
+
+     <div class="main_description_container">
+         <div class="main_description_title">
+             <div>Lorem ipsum</div>
+        </div>
+        <div class="main_description_content_container">
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+        </div>
+         <div class="main_description_content_container">
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+        </div>
+         <div class="main_description_content_container">
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+            <div class="description_content">
+                <div class="content_text">It is a long established fact that a reader
+                    will be distracted by the readable content of a
+                    page when looking at its layout. The point of using Lorem
+                    Ipsum is that it has a more-or-less normal
+                    distribution of lett
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="diagram">
         <div class="diagram_container">
             <div class="diagram_wrapper">
@@ -36,25 +97,26 @@
 </main>
 <footer>
     <form id="feedback_form" action="" method="POST">
+        {% csrf_token %}
 
     </form>
     <div class="feedback_item_container">
         <div class="name_element">
             <input class="feedback_inputs" type="text" id="name" name="name" placeholder="Ваше имя"
-                form="feedback_form">
+                   form="feedback_form">
         </div>
         <div class="phone_element">
             <input class="feedback_inputs" type="text" id="phone" name="phone" placeholder="+375(_)___-__-__"
-                form="feedback_form">
+                   form="feedback_form">
         </div>
         <div class="email_element">
             <input class="feedback_inputs" type="email" id="email" name="email" placeholder="e-mail"
-                form="feedback_form">
+                   form="feedback_form">
 
         </div>
         <div class="button_element">
             <input class="feedback_inputs" type="submit" value="Отправить"
-                form="feedback_form">
+                   form="feedback_form">
         </div>
     </div>
     <div class="any_info_footer_container">
