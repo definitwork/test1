@@ -574,6 +574,7 @@ legend {
 
 .legal_info_description_container {
     text-align: center;
+	padding-bottom: 50px;
 }
 
 .any_info_footer_logo p {
@@ -610,4 +611,79 @@ legend {
     border: none;
 }
 
+.staff{
+    padding: 56px 0;
+}
+
+.staff__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    & h2 {
+        color: #000;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.teacher__list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 55px;
+    column-gap: 50px;
+    margin-left: 50px;
+}
+
+.teacher__list-item-link{
+    display: block;
+    position: relative;
+}
+
+.teacher__list-link-item-img{
+    width: 330px;
+    height: 400px;
+    & img {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+
+.teacher__list-item-name{
+    padding: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    color: #D9D9D9;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.view__more__teacher__button{
+    padding: 10px 5px;
+    background: #D9D9D9;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
