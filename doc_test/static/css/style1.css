@@ -237,14 +237,14 @@ legend {
 	content: '';
     position: absolute;
     left: 185px;
-	bottom: 90px;
+	bottom: 96px;
     border: 10px solid transparent;
     border-bottom: 10px solid lightgray;
 }
 
 .contacts_popup::after {
 	border-bottom: 10px solid white;
-    bottom: 87px; 
+    bottom: 93px; 
 }
 
 .contacts_popup__content {
