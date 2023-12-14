@@ -13,6 +13,73 @@
 
 }
 
+/*почему-то не прописан ни у кого background*/
+/*.welcom_video{*/
+/*    background: #FFFBF9;*/
+/*}*/
+
+.welcom_video_container {
+    /*здесь уже прописаны оступы сверу и снизу в паддинге
+    от хедера и от main_description_container*/
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 62px 0 113px 0;
+}
+
+.wrapper_welcom_video_and_title_and_summary_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*что-то не так с размером вставляемого видео*/
+}
+
+.title_and_summary_button {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+}
+
+.title_and_summary_button h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title_and_summary_button p {
+    max-width: 462px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.learn_about_yourself {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #9B9898;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.welcome_video {
+    /*как вставить видос, что не обрезало?*/
+    max-width: 640px;
+    max-height: 492px;
+}
+
 
 .main_description_content_container {
     display: flex;
@@ -138,3 +205,5 @@
     background-color: #d5d5bd;
     border: none;
 }
+
+
