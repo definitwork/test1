@@ -1,3 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
 @font-face {
     font-family: 'alexbrush';
     src: url("../fonts/alexbrush/brush.ttf") format("truetype")
@@ -8,9 +91,397 @@
     src: url("../fonts/inter/Inter-Regular.ttf") format("truetype")
 }
 
+.header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 75px;
+	padding-top: 30px;
+	
+}
+
+.header__popup.active {
+	position: absolute;
+	overflow: visible;
+	z-index: 1000;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(211, 211, 211, 0.438);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__popup {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.header__popup__content {
+	width: 800px;
+	height: 300px;
+	text-align: center;
+	background-color: rgb(248, 0, 0);
+	font-size: 32px;
+}
+
+.header__form {
+	top: 0;
+	width: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.header__form.active {
+	position: absolute;
+	top: 75px;
+	width: 40%;
+	opacity: 1;
+}
+
+.header_form {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	height: 58px;
+}
+
+.header__form__submit__input {
+	border: 1px solid gray;
+	width: 23%;
+}
+
+.header__form__label__input {
+	position: relative;
+	width: 72%;
+}
+
+.header__form__search__input {
+	border: 1px solid gray;
+	width: 100%;
+	height: 100%;
+	padding-left: 20px;
+}
+
+.header__form__search__input_placeholder.active {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	left: 20px;
+	top: 15px;
+}
+
+.header__form__search__input_placeholder {
+	
+}
+
+.header__form__search__input_search {
+	color: gray;
+}
+
+.header__container {
+	max-width: 1280px;
+	width: 88.8889%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+}
+
+.header__burger__container {
+	display: none;
+}
+
+.header__nav {
+	display: flex;
+	gap: 10px;
+}
+
+.header__contacts {
+	position: relative;
+}
+
+.header__contacts_popup {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.header__contacts_popup.active {
+	position: absolute;
+	left: -180px;
+	top: 40px;
+	width: 230px;
+	height: 110px;
+	opacity: 1;
+	padding-top: 10px;
+    background-color: white;
+	
+}
+
+.contacts_popup {
+	border: 2px solid lightgray;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.contacts_popup::after, .contacts_popup::before {
+	content: '';
+    position: absolute;
+    left: 185px;
+	bottom: 96px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid lightgray;
+}
+
+.contacts_popup::after {
+	border-bottom: 10px solid white;
+    bottom: 93px; 
+}
+
+.contacts_popup__content {
+	width: 100%;
+}
+
+.contacts_popup__phone {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 23px;
+}
+
+.contacts_popup__links {
+	width: 100%;
+	display: flex;
+	padding-left: 25px;
+	padding-right: 25px;
+	justify-content: space-between;
+}
+
+.header__buttons__container {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__button__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__contacts__container, .header__search__container {
+	display: flex;
+	align-items: center;
+}
+
+.header__button {
+	padding: 5px;
+}
+
+.header__account__button {
+	height: 39px;
+	width: 69px;
+	background-color: #D9D9D9;
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	.header__container {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+	.header__logo__container {
+		display: none;
+	}
+	.header__burger__container {
+		display: inherit;
+		cursor: pointer;
+		border: none;
+		height: 36px;
+		width: 36px;
+		transition: border 0.3s;
+	}
+	.header__burger__container:hover {
+		border: 1px solid gray;
+	}
+	.header__logo {
+		display: flex;
+		position: relative;
+		flex-direction: row-reverse;
+		gap: 50px;
+		height: 36px;
+		width: 36px;
+	}
+	.header__navigation {
+		display: none;
+		position: absolute;
+		left: -1000px;
+		transition: left 3s ease;
+		padding-left: 20px;
+		height: calc(100vh - 70px);
+	}
+	.header__navigation.active {
+		display: flex;
+		left: 0px;
+		top: 70px;
+		padding-top: 30px;
+		padding-right: 30px;
+		background-color: lightgray;
+	}
+	.header__nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__burger {
+		position: absolute;
+		left: 0;
+		height: 36px;
+		width: 36px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .header__logo__container {
+		display: none;
+	}
+	.header__burger__container {
+		display: inherit;
+		cursor: pointer;
+		border: none;
+		height: 36px;
+		width: 36px;
+		transition: border 0.3s;
+	}
+	.header__burger__container:hover {
+		border: 1px solid gray;
+	}
+	.header__logo {
+		display: flex;
+		position: relative;
+		flex-direction: row-reverse;
+		gap: 50px;
+		height: 36px;
+		width: 36px;
+	}
+	.header__navigation {
+		display: none;
+		position: absolute;
+		left: -1000px;
+		transition: left 3s ease;
+		padding-left: 20px;
+		height: calc(100vh - 70px);
+	}
+	.header__navigation.active {
+		display: flex;
+		left: 0px;
+		top: 70px;
+		padding-top: 30px;
+		padding-right: 30px;
+		background-color: lightgray;
+	}
+	.header__nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__burger {
+		position: absolute;
+		left: 0;
+		height: 36px;
+		width: 36px;
+	}
+
+    .header__form.active {
+        position: absolute;
+        top: 75px;
+        width: 80%;
+        opacity: 1;
+    }
+}
+
 .main_description_container {
     height: 500px;
 
+}
+
+/*почему-то не прописан ни у кого background*/
+/*.welcom_video{*/
+/*    background: #FFFBF9;*/
+/*}*/
+
+.welcom_video_container {
+    /*здесь уже прописаны оступы сверу и снизу в паддинге
+    от хедера и от main_description_container*/
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 62px 0 113px 0;
+}
+
+.wrapper_welcom_video_and_title_and_summary_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*что-то не так с размером вставляемого видео*/
+}
+
+.title_and_summary_button {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+}
+
+.title_and_summary_button h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title_and_summary_button p {
+    max-width: 462px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.learn_about_yourself {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #9B9898;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.welcome_video {
+    /*как вставить видос, что не обрезало?*/
+    max-width: 640px;
+    max-height: 492px;
 }
 
 
@@ -103,6 +574,7 @@
 
 .legal_info_description_container {
     text-align: center;
+	padding-bottom: 50px;
 }
 
 .any_info_footer_logo p {
@@ -138,3 +610,80 @@
     background-color: #d5d5bd;
     border: none;
 }
+
+.staff{
+    padding: 56px 0;
+}
+
+.staff__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    & h2 {
+        color: #000;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.teacher__list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 55px;
+    column-gap: 50px;
+    margin-left: 50px;
+}
+
+.teacher__list-item-link{
+    display: block;
+    position: relative;
+}
+
+.teacher__list-link-item-img{
+    width: 330px;
+    height: 400px;
+    & img {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+
+.teacher__list-item-name{
+    padding: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    color: #D9D9D9;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.view__more__teacher__button{
+    padding: 10px 5px;
+    background: #D9D9D9;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
