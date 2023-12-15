@@ -6,3 +6,4 @@ class PersonSerializers(serializers.ModelSerializer):
     class Meta:
         model: Person
         fields = '__all__'
+
