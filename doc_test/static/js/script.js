@@ -54,7 +54,7 @@ function fn2() {
 }
 
 function getCards() {
-    fetch('http://127.0.0.1/example.com/api/v1/johan')
+    fetch('http://127.0.0.1:8000/example.com/api/v1/johan')
     .then((response) => {
         return response.json();
     })
