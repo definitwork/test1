@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('test1_app.urls')),
     path('doc/', include('doc_test.urls')),
+    path('api/v1/', include('johan_app.urls')),
 ]
 
