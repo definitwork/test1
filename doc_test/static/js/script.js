@@ -54,7 +54,8 @@ function fn2() {
 }
 
 function getCards() {
-    fetch('http://127.0.0.1:8000/example.com/api/v1/johan')
+    console.log('aaaaaaaaaa')
+    fetch('http://127.0.0.1:8000/api/v1/johan')
     .then((response) => {
         return response.json();
     })
@@ -62,15 +63,14 @@ function getCards() {
         console.log(data);
         const cards = document.getElementsByClassName('teacher__list')[0]
 
-        data.map(card => cards.innerHTML += 
-                            <li class="teacher__list__item" key={card.id}>
+        data.map((card) => cards.innerHTML += `<li class="teacher__list__item" key=${card.id}>
                                 <a href="#" class="teacher__list-item-link">
                                     <div class="teacher__list-link-item-img">
-                                        <img src={card.photo} alt=""></img>
+                                        <img src=${card.photo} alt=""></img>
                                     </div>
-                                    <p class="teacher__list-item-name">{card.name_surname}</p>
+                                    <p class="teacher__list-item-name">${card.name_surname}</p>
                                 </a>
-                            </li>
+                            </li>`
                             )
     });
 }
