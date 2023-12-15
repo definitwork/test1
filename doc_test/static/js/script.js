@@ -1,4 +1,6 @@
 window.onload = function() {
+    getCards()
+
     input = document.getElementsByClassName('header__form__search__input')[0]
     input.onfocus = function() {
         if (document.getElementsByClassName('header__form__search__input_placeholder active')[0]) {
@@ -49,4 +51,26 @@ function fn2() {
             document.getElementsByClassName(`${strings[i]} active`)[0].classList.toggle('active')
         }
     }
+}
+
+function getCards() {
+    fetch('http://127.0.0.1:8000/example.com/api/v1/johan')
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        console.log(data);
+        const cards = document.getElementsByClassName('teacher__list')[0]
+
+        data.map(card => cards.innerHTML += 
+                            <li class="teacher__list__item" key={card.id}>
+                                <a href="#" class="teacher__list-item-link">
+                                    <div class="teacher__list-link-item-img">
+                                        <img src={card.photo} alt=""></img>
+                                    </div>
+                                    <p class="teacher__list-item-name">{card.name_surname}</p>
+                                </a>
+                            </li>
+                            )
+    });
 }
