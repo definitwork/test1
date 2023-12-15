@@ -161,3 +161,9 @@ cython_debug/
 .idea/
 .idea
 idea/
+
+<<<<<<< HEAD
+.config/settings.py
+=======
+config/settings.py
+>>>>>>> dev
